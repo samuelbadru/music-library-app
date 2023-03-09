@@ -13,8 +13,8 @@ class DatabaseConnection
   def self.connect
     # If the environment variable (set by Render)
     # is present, use this to open the connection.
-    if ENV['postgres://music_library_database_n2hl_user:73AhZOKZtOWMuRxZ8oDoAmV5rez6ESE8@dpg-cg4regvdvk4n2c0oairg-a.oregon-postgres.render.com/music_library_database_n2hl'] != nil
-      @connection = PG.connect(ENV['postgres://music_library_database_n2hl_user:73AhZOKZtOWMuRxZ8oDoAmV5rez6ESE8@dpg-cg4regvdvk4n2c0oairg-a.oregon-postgres.render.com/music_library_database_n2hl'])
+    if ENV['postgres://music_library_database_n2hl_user:73AhZOKZtOWMuRxZ8oDoAmV5rez6ESE8@dpg-cg4regvdvk4n2c0oairg-a/music_library_database_n2hl'] != nil
+      @connection = PG.connect(ENV['postgres://music_library_database_n2hl_user:73AhZOKZtOWMuRxZ8oDoAmV5rez6ESE8@dpg-cg4regvdvk4n2c0oairg-a/music_library_database_n2hl'])
       return
     end
 
